@@ -11,10 +11,10 @@ yum install -y geo.data.gov
 sudo -u root cp -rf /vagrant/config/production.ini /etc/ckan/production.ini
 
 # handle src folder
-if [ -d "/vagrant/src" ]; then
-  rm -rf /usr/lib/ckan/src
-  ln -s /vagrant/src /usr/lib/ckan/src
-else 
-  mv /usr/lib/ckan/src /vagrant
-  ln -s /vagrant/src /usr/lib/ckan/src
-fi
+#if [ -d "/vagrant/src" ]; then
+#  rm -rf /usr/lib/ckan/src
+#  ln -s /vagrant/src /usr/lib/ckan/src
+#else 
+#  mv /usr/lib/ckan/src /vagrant
+#  ln -s /vagrant/src /usr/lib/ckan/src
+#fi
