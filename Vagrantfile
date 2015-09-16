@@ -1,6 +1,6 @@
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "chef/centos-6.6"
+  config.vm.box = "bento/centos-6.7"
 
   #config.hostmanager.enabled = true
   #config.hostmanager.manage_host = true

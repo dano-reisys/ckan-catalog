@@ -14,3 +14,6 @@ sudo -u postgres createdb -O geo.gov ckan -E utf-8
 
 sudo -u root sed -i '1i host all all 127.0.0.1/32 md5' /var/lib/pgsql/9.2/data/pg_hba.conf
 service postgresql-9.2 restart
+
+# restore minimized db
+sh /vagrant/scripts/db/restore_dbs_blank.sh
