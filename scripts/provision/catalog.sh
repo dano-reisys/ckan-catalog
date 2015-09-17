@@ -12,6 +12,7 @@ sudo -u root cp -rf /vagrant/config/production.ini /etc/ckan/production.ini
 
 # create ckan.conf 
 sudo -u root cp -rf /etc/httpd/conf.d/ckan.conf.example /etc/httpd/conf.d/ckan.conf
+sudo -u root service httpd restart
 
 # handle src folder
 #if [ -d "/vagrant/src" ]; then
